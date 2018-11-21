@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 222676883396760340}
   - component: {fileID: 114178322983680712}
   - component: {fileID: 114377099715765148}
+  - component: {fileID: 114082542094980826}
   m_Layer: 5
   m_Name: BackToMenu
   m_TagString: Untagged
@@ -46,6 +47,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114082542094980826
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1599445745554450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df08f617c17df2647b19508015dbbea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114178322983680712
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -145,8 +157,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: GoToMenu
+      - m_Target: {fileID: 114082542094980826}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
