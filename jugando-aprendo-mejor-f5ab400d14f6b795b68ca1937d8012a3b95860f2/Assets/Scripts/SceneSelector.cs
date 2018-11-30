@@ -17,7 +17,7 @@ public class SceneSelector : MonoBehaviour {
 
     public void GoToGame()
     {
-        this.SendToScene("Game");
+        this.SendToScene("QuestionA");
     }
 
     public void GoToMenu()
@@ -25,8 +25,13 @@ public class SceneSelector : MonoBehaviour {
         this.SendToScene("Menu");
     }
 
-    private void SendToScene(string scene)
+    protected void SendToScene(string scene)
     {
         SceneManager.LoadScene(scene);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

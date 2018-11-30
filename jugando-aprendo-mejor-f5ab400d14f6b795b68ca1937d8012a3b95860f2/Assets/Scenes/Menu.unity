@@ -420,6 +420,7 @@ GameObject:
   - component: {fileID: 448879802}
   - component: {fileID: 448879801}
   - component: {fileID: 448879800}
+  - component: {fileID: 448879803}
   m_Layer: 5
   m_Name: Rules
   m_TagString: Untagged
@@ -485,7 +486,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1505257083}
+      - m_Target: {fileID: 448879803}
         m_MethodName: GoToRules
         m_Mode: 1
         m_Arguments:
@@ -532,6 +533,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 448879798}
   m_CullTransparentMesh: 0
+--- !u!114 &448879803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 448879798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06db64cface87014098f1b61ddb2153b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &714476170
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +555,7 @@ GameObject:
   - component: {fileID: 714476174}
   - component: {fileID: 714476173}
   - component: {fileID: 714476172}
+  - component: {fileID: 714476175}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -608,7 +621,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1505257083}
+      - m_Target: {fileID: 714476175}
         m_MethodName: GoToLevels
         m_Mode: 1
         m_Arguments:
@@ -655,6 +668,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 714476170}
   m_CullTransparentMesh: 0
+--- !u!114 &714476175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 714476170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06db64cface87014098f1b61ddb2153b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1091560907
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,6 +690,7 @@ GameObject:
   - component: {fileID: 1091560911}
   - component: {fileID: 1091560910}
   - component: {fileID: 1091560909}
+  - component: {fileID: 1091560912}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -731,8 +756,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1505257082}
-        m_MethodName: DoQuit
+      - m_Target: {fileID: 1091560912}
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -778,6 +803,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1091560907}
   m_CullTransparentMesh: 0
+--- !u!114 &1091560912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1091560907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06db64cface87014098f1b61ddb2153b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1158281502
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,8 +899,6 @@ GameObject:
   - component: {fileID: 1505257081}
   - component: {fileID: 1505257080}
   - component: {fileID: 1505257079}
-  - component: {fileID: 1505257082}
-  - component: {fileID: 1505257083}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -917,28 +951,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1505257082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1505257078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e389f279d8b8b24092f51e94411563e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1505257083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1505257078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df08f617c17df2647b19508015dbbea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1528737866
 GameObject:
   m_ObjectHideFlags: 0

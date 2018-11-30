@@ -7,14 +7,44 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
-    guid: 071868077a8c8694e9c837db357da52a
-  - enabled: 1
-    path: Assets/Scenes/Game.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 0d0d4395ca2ed504da443b8e10375b59
   - enabled: 1
     path: Assets/Scenes/Rules.unity
-    guid: 92723897d448b784ab399e814ba19af3
+    guid: 71ed218ebc775ff428b9f7dfedec0ae0
   - enabled: 1
     path: Assets/Scenes/Levels.unity
-    guid: 14ceff9b406ae5849940fb01f62b5f66
+    guid: db383b47cbe0d1a499c79034c19c4f2e
+  - enabled: 1
+    path: Assets/Scenes/QuestionA.unity
+    guid: 212fc6dc50e489a469acea064da322ed
+  - enabled: 1
+    path: Assets/Scenes/QuestionB.unity
+    guid: bffd84ef16ecd5e4f827f05556676f19
+  - enabled: 1
+    path: Assets/Scenes/QuestionC.unity
+    guid: 3b6e24312968436448cd70481bda0905
+  - enabled: 1
+    path: Assets/Scenes/QuestionD.unity
+    guid: 2688ae9c222026b4ba7e66fd1c853fe2
+  - enabled: 1
+    path: Assets/Scenes/QuestionE.unity
+    guid: ca8870f70f26a1d49a4d3621882bb9b8
+  - enabled: 1
+    path: Assets/Scenes/QuestionF.unity
+    guid: ac2ad224a773b40409edb1d6a24862e9
+  - enabled: 1
+    path: Assets/Scenes/QuestionG.unity
+    guid: e4e1821997d9ca04da438c3c00775f64
+  - enabled: 1
+    path: Assets/Scenes/QuestionH.unity
+    guid: 79187ab0381753d40a0073bb791eaf04
+  - enabled: 1
+    path: Assets/Scenes/QuestionI.unity
+    guid: a07abc3ed378cd6448eff49864549cd5
+  - enabled: 1
+    path: Assets/Scenes/QuestionJ.unity
+    guid: f45920f28f06c1543b2b00e479198725
+  - enabled: 1
+    path: Assets/Scenes/Winner.unity
+    guid: da1ad5f693914404a93326e176a46da5
   m_configObjects: {}

@@ -145,8 +145,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076325, y: -24}
-  m_SizeDelta: {x: 603.33, y: 100.8}
+  m_AnchoredPosition: {x: 0.000007586, y: 2.475}
+  m_SizeDelta: {x: 603.33, y: 95.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &178293711
 MonoBehaviour:
@@ -180,7 +180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xBFQu\xE9 es educaci\xF3n vial?"
+  m_Text: "\xBFCu\xE1l es el rango de velocidad establecida en zona escolar?"
 --- !u!222 &178293712
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -261,6 +261,7 @@ GameObject:
   - component: {fileID: 234238663}
   - component: {fileID: 234238662}
   - component: {fileID: 234238661}
+  - component: {fileID: 234238664}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -308,7 +309,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.28235295, g: 0.9254902, b: 0.37254903, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -325,7 +326,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 234238662}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 234238664}
+        m_MethodName: ButtonWasSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &234238662
@@ -362,6 +374,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 234238659}
   m_CullTransparentMesh: 0
+--- !u!114 &234238664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 234238659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a56ccca115d71247a4425870e42e554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  next: QuestionE
 --- !u!1 &433442698
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,7 +453,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Es tener conocimiento de las normas de tr\xE1nsito"
+  m_Text: 20km/hr - 40km/hr
 --- !u!222 &433442701
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -581,7 +605,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Es un conjunto de normas que reglamentan el buen conducir
+  m_Text: 20km/hr - 30km/hr
 --- !u!222 &547425215
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -669,6 +693,7 @@ GameObject:
   - component: {fileID: 734053439}
   - component: {fileID: 734053438}
   - component: {fileID: 734053437}
+  - component: {fileID: 734053440}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -716,7 +741,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.99215686, g: 0.33333334, b: 0.33333334, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -733,7 +758,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 734053438}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 734053440}
+        m_MethodName: ButtonWasSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &734053438
@@ -770,6 +806,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 734053435}
   m_CullTransparentMesh: 0
+--- !u!114 &734053440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 734053435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a56ccca115d71247a4425870e42e554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  next: 
 --- !u!1 &1276872275
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,7 +1053,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Es un conjunto de acciones que regula el tr\xE1nsito"
+  m_Text: 10km/hr - 20km/hr
 --- !u!222 &1648870564
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1024,6 +1072,7 @@ GameObject:
   - component: {fileID: 1762924368}
   - component: {fileID: 1762924367}
   - component: {fileID: 1762924366}
+  - component: {fileID: 1762924369}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -1071,7 +1120,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.99215686, g: 0.33333334, b: 0.33333334, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1088,7 +1137,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1762924367}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1762924369}
+        m_MethodName: ButtonWasSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1762924367
@@ -1125,3 +1185,15 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1762924364}
   m_CullTransparentMesh: 0
+--- !u!114 &1762924369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1762924364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a56ccca115d71247a4425870e42e554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  next: 
