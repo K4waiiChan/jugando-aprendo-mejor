@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 
 public class SceneSelector : MonoBehaviour {
+    public float level;
 
     public void GoToRules()
     {
@@ -17,6 +18,7 @@ public class SceneSelector : MonoBehaviour {
 
     public void GoToGame()
     {
+        PlayerPreferences.SetNewInstance(this.level);
         this.SendToScene("QuestionA");
     }
 
