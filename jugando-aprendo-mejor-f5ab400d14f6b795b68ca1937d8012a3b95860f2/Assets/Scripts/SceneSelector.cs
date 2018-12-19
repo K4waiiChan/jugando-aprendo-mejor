@@ -19,7 +19,7 @@ public class SceneSelector : MonoBehaviour {
     public void GoToGame()
     {
         PlayerPreferences.SetNewInstance(this.level);
-        this.SendToScene("QuestionA");
+        this.SendToScene(PlayerPreferences.Instance.SelectedDificulty + "QuestionA");
     }
 
     public void GoToMenu()

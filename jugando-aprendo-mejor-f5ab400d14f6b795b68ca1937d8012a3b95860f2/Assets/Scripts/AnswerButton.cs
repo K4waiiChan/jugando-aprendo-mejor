@@ -10,10 +10,13 @@ public class AnswerButton : SceneSelector {
         if (next == "")
         {
             this.GoToMenu();
-        }
+        } else if( next == "Winner")
         {
             this.SendToScene(next);
-
+        } else
+        {
+            this.SendToScene(PlayerPreferences.Instance.SelectedDificulty + next);
         }
+            
     }
 }
